@@ -740,6 +740,18 @@
         "@deepseek-ai/.+"
       ]
     },
+    "apps/desktop": {
+      "entry": [
+        "src/main.ts",
+        "scripts/stage-runtime.ts",
+        "tests/**/*.spec.ts"
+      ],
+      "project": [
+        "src/**/*.ts",
+        "scripts/**/*.ts",
+        "tests/**/*.ts"
+      ]
+    },
     "packages/client/modules": {
       "entry": [
         "tests/**/*.spec.ts"
