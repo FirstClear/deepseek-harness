@@ -112,7 +112,7 @@ async function readManifest(path: string): Promise<PackageManifest> {
 }
 
 async function findSymlink(directory: string): Promise<string | undefined> {
-  let entries: Awaited<ReturnType<typeof readdir>>
+  let entries
   try {
     entries = await readdir(directory, { withFileTypes: true })
   } catch {
